@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'my-first-app';
+  displayDetails = true;
+  buttonClicks = [];
+
+  onDisplayDetails() {
+    this.displayDetails = !this.displayDetails;
+    this.buttonClicks.push(this.buttonClicks.length + 1);
+  }
 }
