@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   displayDetails = true;
-  buttonClicks = [];
+  log = [];
 
   onDisplayDetails() {
     this.displayDetails = !this.displayDetails;
-    this.buttonClicks.push(this.buttonClicks.length + 1);
+    this.log.push(new Date());
   }
 }

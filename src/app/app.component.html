@@ -37,11 +37,11 @@
       <p *ngIf="displayDetails">Secret Password = tuna</p>
       <br />
       <p
-        *ngFor="let click of buttonClicks"
-        [ngStyle]="{ backgroundColor: click > 4 ? 'blue' : 'white' }"
-        [ngClass]="{ styledClick: click > 4 }"
+        *ngFor="let logItem of log; let i = index"
+        [ngStyle]="{ backgroundColor: i > 3 ? 'blue' : 'white' }"
+        [ngClass]="{ styledClick: i > 3 }"
       >
-        {{ click }}
+        {{ logItem }}
       </p>
     </div>
   </div>
